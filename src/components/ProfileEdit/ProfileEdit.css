@@ -1,0 +1,176 @@
+.profile-edit__body h3 {
+    padding-top: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container-profile-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-edit__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input label {
+    width: 100%;
+}
+
+.img-change {
+    display: flex;
+    align-items: center;
+}
+
+.img-change img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 120px;
+    height: 120px;
+}
+
+.delete-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0px 10px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #d6c8c8ac;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.profile-errorMessage {
+    width: 600px;
+    color: red;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.profile-confirmMessage {
+    width: 600px;
+    color: green;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.delete-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.address-change {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 600px;
+    padding: 10px;
+}
+
+.address-change form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.address-inputs {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: rgb(251, 251, 251);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.input__label {
+    font-size: 19px;
+    margin-left: 11px;
+}
+
+@media screen and (max-width: 650px) {
+
+    .input {
+        width: 400px;
+    }
+
+    .profile-edit__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address-change {
+        width: 400px;
+    }
+
+    #city-county-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #delete-profile-part{
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+
+    .input {
+        width: 350px;
+    }
+
+    .profile-edit__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address-change {
+        width: 350px;
+    }
+
+    #city-county-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #delete-profile-part{
+        width: 370px;
+        padding: 0px 10px;
+    }
+}

@@ -1,0 +1,80 @@
+.popup-label {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #525d6f;
+  opacity: .4;
+  transition: opacity .4s ease-in-out;
+  display: block;
+  z-index: 100;
+  user-select: none;
+}
+
+.popup-input[type="radio"] {
+  display: none;
+  width: 0;
+}
+
+.top-tabs{
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+.popup{
+  padding: 30px;
+}
+
+.users-list img{
+  width: 330px;
+  height: 220px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.events-list img {
+  width: 330px;
+  height: 220px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+.events-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.search-terms label{
+  margin-left: 5px;
+  margin-right: 11px;
+}
+
+#searchField {
+  margin-bottom: 15px;
+}
+
+#eventTitle{
+  margin-bottom: 15px;
+}
+
+.event-details label{
+  font-size: 17px;
+  font-weight: 700;
+}
+.user-details label{
+  font-size: 17px;
+  font-weight: 700;
+}

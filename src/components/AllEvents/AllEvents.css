@@ -1,0 +1,253 @@
+.events-filter {
+    display: flex;
+    gap: 15px;
+    padding: 17px;
+    border-radius: 15px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+
+
+.fa-location-dot {
+    margin-right: 5px;
+}
+
+.all-events-container h2 {
+    text-align: center;
+}
+
+.all-events-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #606060;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.events-filter p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 5px;
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+    padding: 15px;
+}
+
+.events-filter p:hover {
+    background-color: rgba(171, 170, 170, 0.785);
+    transition: background-color 0.3s ease;
+}
+
+
+.all-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 410px));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.single-event {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    height: 520px;
+    border-radius: 26px;
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    box-shadow: 10px 10px 21px #d8d8d8,
+        -10px -10px 21px #ffffff;
+}
+
+.single-event img {
+    width: 390px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.single-event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 10px 10px 10px;
+}
+
+.hours-event {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.hours-event-left {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 232, 231);
+    padding: 7px;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    align-items: center;
+    gap: 3px;
+}
+
+.hours-event-left p {
+    opacity: 70%;
+}
+
+
+.hours-event-right p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#single-event-location {
+    opacity: 80%;
+}
+
+
+.people-going {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+#people-going-length {
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.one-person {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.one-person p {
+    opacity: 0.7;
+}
+
+.single-event-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#no-events-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #606060;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.show-more-btn {
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+
+.activeFilter {
+    color: rgba(40, 90, 255) !important;
+}
+
+
+/* show more btn */
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 15px;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta i {
+    transform: translateX(-8px);
+    transform: translateY(7px);
+    transition: all 0.3s ease;
+}
+
+.hover-underline-animation {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5a5858;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media screen and (max-width: 460px) {
+
+    .all-events {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 360px));
+    }
+
+    .single-event img {
+        width: 340px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 498px) {
+
+    .events-filter {
+        display: flex;
+        gap: 11px;
+        padding: 17px 0px;
+        border-radius: 15px;
+        width: fit-content;
+        font-weight: bold;
+    }
+
+    .events-filter p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #606060;
+        text-shadow: 0 1px #fff;
+        padding: 5px;
+    }
+
+}
